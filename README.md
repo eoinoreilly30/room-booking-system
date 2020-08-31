@@ -1,2 +1,2 @@
-# room-booking-system
-Vanilla JS frontend, Java with Oracle DB backend 
+# Room Booking System
+Vanilla JS frontend, Java with Oracle DB backend
