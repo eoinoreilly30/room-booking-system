@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css/accountHome.css">
+<title>Dashboard</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="javascript/accountHome.js"></script>
+</head>
+
+<body>
+<div class="title">
+	Available Rooms
+	<span id="date-display"></span>
+	<span class="loader" id="available-bookings-loading"> - Loading...</span>
+</div>
+<div id="available-bookings-container"></div>
+<div class="buttons-container">
+	<button class="form-button" onClick="decrementDate()">Previous Date</button>
+	<button class="form-button" onClick="incrementDate()">Next Date</button>
+</div>
+<div class="title">
+	Your Current Bookings
+	<span class="loader" id="user-bookings-loading"> - Loading...</span>
+</div>
+<div id="user-bookings-container"></div>
+<div id="create-room-container">
+	<form id="create-room-form" action="Rooms" method="post">
+	<div class="title">
+		Create Room
+	</div>
+	<div class="form-group">
+    	<input type="text" class="form-input" required="required" name="name" placeholder="room name">
+	</div>
+	<div class="form-group">
+    	<input type="text" class="form-input" required="required" name="location" placeholder="location">
+	</div>
+	<div class="form-group">
+    	<input type="text" class="form-input" required="required" name="capacity" placeholder="capacity">
+	</div>
+	<div class="form-group">
+    	<button class="form-button" type="submit">Create</button>
+	</div>
+</form>
+</div>
+<button onclick="window.location.href='index.html'">Log Out</button>
+</body>
+</html>
